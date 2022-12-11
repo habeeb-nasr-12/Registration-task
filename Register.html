@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <section class="Register-page my-5">
+
+        <div class="container py-5 collect w-75">
+            <div class="row">
+    
+    
+                <div class="col-md-6">
+                    <div class="item d-flex align-items-center justify-content-center">
+    
+                        <img src="images/images.jpeg" class="w-75  rounded" alt="necklace">
+    
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="item my-3 ">
+               
+                    
+                    <h2 class="mt-5 mb-3 fw-bold text-start">Create Account</h2>
+                    <p  class="my-3 normal ">Go ahead and sign up, let everyone know how awesome you are!</p>
+                    <form class="my-3"  >
+                        <div class="d-flex mt-3">
+                            <i class="fa-solid fa-user fa-6 mt-2"></i>
+                            <input class="form-control username ms-2"  id="username"  onkeyup="finalValidation()" placeholder="Username" type="text">
+                            </div>
+                            <div class="alert alert-danger  m-auto mt-2 namealert">Username must be from 5 to 15 characters, only letters and numbers are allowed, with no numbers at the beginning or the end,</div>
+                             <div class="d-flex mt-3">
+                                <i class="fa-solid fa-envelope fa-6 mt-2"></i>
+                                <input class="form-control email ms-2"    id="email"  onkeyup="finalValidation()" placeholder="Email" type="email">
+                                 </div>
+                            <div class="alert alert-danger mt-2 emailalert"> you must enter vaild email</div>
+
+                                 <div class="d-flex mt-3">
+                                    <i class="fa-solid fa-lock  fa-6 mt-2"></i>
+                                    <input class="form-control password ms-2"    id="password"  onkeyup="finalValidation()" placeholder="password" type="password">
+                                     </div>
+                            <div class="alert alert-danger mt-2 passwordalert"> The Password must contain at least one uppercase, … letter, number, symbol and from 8 to 20 characters</div>
+
+                                     <div class="d-flex mt-3">
+                                        <i class="fa-solid fa-lock  fa-6 mt-2"></i>
+                                        <input class="form-control confirmpassword ms-2"   id="userRePassword"    onkeyup="finalValidation()" placeholder="confirm password" type="password">
+                                         </div>
+                                         <div class="alert alert-danger mt-2 Repasswordalert"> This does not match with Your password</div>
+
+                                         <button  disabled="true" class=" submitBtn my-5 p-3 d-block w-100 btn btn-primary">Get started</button>
+                    </form>
+                
+    
+               
+    
+                    </div>
+                </div>
+    
+     
+            </div>
+    
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
